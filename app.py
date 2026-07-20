@@ -10,6 +10,7 @@ def load_data():
     df = pd.read_csv(
         file_path,
         sheet_name="sales_data_clean"
+    )
 
 from utils.loader import load_data
 from utils.metrics import calculate_metrics
