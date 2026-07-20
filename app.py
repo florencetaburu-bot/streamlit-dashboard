@@ -12,14 +12,6 @@ def load_data():
         sheet_name="sales_data_clean"
     )
 
-from utils.loader import load_data
-from utils.metrics import calculate_metrics
-from utils.charts import (
-    monthly_sales,
-    sales_by_country,
-    product_sales
-)
-
 st.set_page_config(
     page_title="Sales Dashboard",
     layout="wide"
