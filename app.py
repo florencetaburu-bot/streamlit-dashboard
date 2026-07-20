@@ -1,4 +1,15 @@
 import streamlit as st
+from pathlib import Path
+import pandas as pd
+import streamlit as st
+
+@st.cache_data
+def load_data():
+    file_path = Path(__file__).parent.parent / "data" / "sales_data_clean.csv"
+
+    df = pd.read_csv(
+        file_path,
+        sheet_name="sales_data_clean"
 
 from utils.loader import load_data
 from utils.metrics import calculate_metrics
